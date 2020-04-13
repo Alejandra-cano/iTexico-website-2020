@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+            <!--Mobile nav-->
+     <div class="mobile-or-tablet">
+        <div class="menu_btn">
+            <div style="margin: 15px 29px 29px 29px; margin-left: auto;" onclick="displayMenu()"> <img style="height: 50px; width: 50px;" src="assets/images/open-menu.svg"></div>   
+        </div>
+        <div id="overlay" style="display:none;">
+            <div style="display:flex; flex-direction: row; height: 75px;">
+                <div><img class="logo" src="assets/images/logo/iTexico_TagLogo_whiteWeb.png" alt="logo"></div>
+                <div class="nav-icon" id="close_menu" onclick="displayMenu()"> <img class="close-ic" src="assets/images/close.svg"> </div>
+            </div>
+            <ul class="nav-menu" style="text-align: center; padding-inline-start: 0px">
+                <li class="nav-link"><a href="#"> Our Services</a></li>
+                <li class="nav-link"><a href="#"> How We Work</a></li>
+                <li class="nav-link"><a href="#">Case Studies</a></li>
+                <li class="nav-link"><a href="#"> About Us</a></li>
+                <li class="nav-link"><a href="#"> Blog</a></li>
+                <li class="nav-link"><a href="#"> Contact</a></li>
+            </ul>
+        </div>
+     </div>
+    <!--end of mobile nav-->
     <div class="nav-subcontainer">
         <nav class="flex-row">
             <a>
@@ -75,8 +96,8 @@
             </div>
             <div>
                 <h2 class="text-charcoal-pop text-prim">UX/UI Design</h2>
-                <div class="flex-row">
-                    <div class="text-charcoal text-trd text-left sz-75">
+                <div class="flex-row" id="ser-cont">
+                    <div class="text-charcoal text-trd text-left sz-75 ser-txt">
                         <p>
                             We Help Our Customers To Conceptualize, Design, Build, Ship And Maintain Great Software That Responds To The Changing Needs Of The Market And The Business Product.
                         </p>
@@ -87,22 +108,22 @@
                             <li>More than 100 design projects to date including web, mobile and IoT</li>
                         </ul>
                     </div>
-                    <div class="sz-50 flex-column flex-col-center flex-center">
-                        <img class="img-lg" src="assets/images/photos/services.png" alt="logo">
+                    <div class="sz-50 flex-column flex-col-center flex-center" id="img-b">
+                        <img class="img-lg" id="ser-img" src="assets/images/photos/services.png" alt="logo">
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="section-container-gray flex-row flex-center">
-        <div class="card-lg flex-column flex-center" style="margin-right: 40px;">
+        <div class="card-lg flex-column flex-center quot-a">
             <span class="quote">“</span>
             <p class="text-charcoal text-snd">
                 iTexico continues to enable the business to thrive and deliver high quality technology and business projects that meet a range of client needs. Organized, professional, and talented in their field, their team is great to work with and highly recommended.
             </p>
             <div class="flex-row flex-sp-bt">
                 <div class="flex-row">
-                    <img src="assets/images/people/kate.png"/>
+                    <img class="img-q" src="assets/images/people/kate.png"/>
                     <div class="flex-column m-lf">
                         <span>Kate Doe</span>
                         <span>CEO - Genesis Path</span>
@@ -168,8 +189,8 @@
             </div>
         </div>
         <div class="section-container-charcoal">
-            <div class="flex-row">
-                <div>
+            <div class="flex-row" id="ft-n">
+                <div class="footer-center">
                     <div>
                         <a>
                             <img class="img-sm" src="assets/images/logo/iTexico_Logo_WH_Web.png" alt="logo">
@@ -266,7 +287,7 @@
                         <a>Opinions</a>
                     </li>
                 </ul>
-                <ul class="list-footer">
+                <ul class="list-footer" id="ft-con">
                     <li>contact</li>
                     <li>
                         <address>
@@ -289,5 +310,19 @@
             Privacy & Legal
         </div>
     </footer>
+        <script>
+        function displayMenu(){
+            var display;
+            var overlay = document.getElementById("overlay");
+            display = overlay.style.display;
+
+            if (display == "none"){
+                overlay.style.display = "block"
+            }
+            else{
+                overlay.style.display = "none"
+            }
+        }
+    </script>
 </body>
 </html>
