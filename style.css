@@ -703,9 +703,39 @@ ul {
 .btn-cnt{
 	width: 85px;
 }
+.quot-a{
+	margin-right: 40px;
+}
 /* Queries */
 
 @media only screen and (max-width: 320px) {
+
+/*Project delivery*/
+#img-pd{
+text-align:center;
+}
+p.text-charcoal-pop.text-snd.text-left.s-margin.pad-20{
+	padding: 20px 0px 20px 0px;
+}
+.pd-card ul{
+	padding: 0px;
+}
+.card-content.card-border ul{
+	padding:0px;
+}
+/* Services */
+.services-tab{
+	margin-right: 0px;
+}
+.services-tab li{
+	width: 100%;
+}
+.ser-txt{
+	width: 100%;
+}
+.ser-txt ul{
+	padding: 0px;
+}
 
 /* Contact */
 .cnt-a{
@@ -1044,6 +1074,44 @@ display:none;
 
 @media only screen and (min-width: 321px) and (max-width: 480px){
 
+/*Project delivery*/
+#img-pd{
+text-align:center;
+}
+p.text-charcoal-pop.text-snd.text-left.s-margin.pad-20{
+	padding: 20px 0px 20px 0px;
+}
+.pd-card ul{
+	padding: 0px;
+}
+.card-content.card-border ul{
+	padding:0px;
+}
+#img-pd{
+text-align:center;
+}
+/* Services */
+.services-tab{
+	margin-right: 0px;
+}
+.services-tab li{
+	width: 100%;
+}
+.ser-txt{
+	width: 100%;
+}
+.ser-txt ul{
+	padding: 0px;
+}
+.quot-a{
+ margin-right: 0px;
+}
+
+/* Contact */
+.services-tab{
+	margin-right:0px;
+}
+
 /* Contact */
 .cnt-a{
 	width: 100%
@@ -1349,6 +1417,55 @@ display:none;
 
 @media only screen and (min-width: 481px) and (max-width: 767px){
 
+/*Project delivery*/
+.section-container-gray .flex-row.flex-wrap{
+	justify-content: center;
+	}
+.pd-txt{
+padding-left:10px;
+	}
+#img-pd{
+text-align:center;
+}
+p.text-charcoal-pop.text-snd.text-left.s-margin.pad-20{
+	padding: 20px 10px 20px 10px;
+	width: 90%
+}
+.card-content.card-border ul{
+	padding:0px;
+}
+.card-content.pd-card ul{
+	padding-left: 40px;
+}
+#img-pd{
+text-align:center;
+}
+
+/* Services */
+.services-tab{
+	margin-right: 20px;
+}
+.services-tab li{
+	width: 130px;
+}
+.ser-txt{
+	width: 100%;
+}
+.ser-txt ul{
+	padding: 0px;
+}
+#ser-cont{
+	flex-direction: column;
+}
+#ser-img{
+	 max-height: 170px;
+}
+#ser-cont #img-b{
+	    height: 190px;
+}
+.quot-a{
+ margin-right: 0px;
+}
 /* Contact */
 .cnt-a{
 	width: 100%
@@ -1709,8 +1826,58 @@ margin-right: 10px;
 }
 
 @media only screen and (min-width: 767px) and (max-width: 1069px){
+	
+/*Project delivery*/
+.section-container-gray .flex-row.flex-wrap{
+	justify-content: center;
+	}
+.pd-txt{
+padding-left:10px;
+	}
+#img-pd{
+text-align:center;
+}
+p.text-charcoal-pop.text-snd.text-left.s-margin.pad-20{
+	padding: 20px 10px 20px 10px;
+	width: 90%
+}
+.card-content.card-border ul{
+	padding:0px;
+}
+.card-content.pd-card ul{
+	padding-left: 40px;
+}
+#img-pd{
+text-align:center;
+}
 
-	/* Contact */
+	/* Services */
+.services-tab{
+	margin-right: 20px;
+}
+.services-tab li{
+	width: 130px;
+}
+.ser-txt{
+	width: 100%;
+}
+.ser-txt ul{
+	padding: 0px;
+}
+#ser-cont{
+	flex-direction: column;
+}
+#ser-img{
+	 max-height: 170px;
+}
+#ser-cont #img-b{
+	    height: 190px;
+}
+.quot-a{
+ margin-right: 0px;
+}
+
+/* Contact */
 .cnt-a{
 	width: 100%
 }
