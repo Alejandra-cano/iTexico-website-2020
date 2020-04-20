@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+            <!--Mobile nav-->
+     <div class="mobile-or-tablet">
+        <div class="menu_btn">
+            <div style="margin: 15px 29px 29px 29px; margin-left: auto;" onclick="displayMenu()"> <img style="height: 50px; width: 50px;" src="assets/images/open-menu.svg"></div>   
+        </div>
+        <div id="overlay" style="display:none;">
+            <div style="display:flex; flex-direction: row; height: 75px;">
+                <div><img class="logo" src="assets/images/logo/iTexico_TagLogo_whiteWeb.png" alt="logo"></div>
+                <div class="nav-icon" id="close_menu" onclick="displayMenu()"> <img class="close-ic" src="assets/images/close.svg"> </div>
+            </div>
+            <ul class="nav-menu" style="text-align: center; padding-inline-start: 0px">
+                <li class="nav-link"><a href="#"> Our Services</a></li>
+                <li class="nav-link"><a href="#"> How We Work</a></li>
+                <li class="nav-link"><a href="#">Case Studies</a></li>
+                <li class="nav-link"><a href="#"> About Us</a></li>
+                <li class="nav-link"><a href="#"> Blog</a></li>
+                <li class="nav-link"><a href="#"> Contact</a></li>
+            </ul>
+        </div>
+     </div>
+    <!--end of mobile nav-->
     <div class="nav-subcontainer">
         <nav class="flex-row">
             <a>
@@ -33,7 +54,7 @@
                 We help you create, test, and optimize digital experiences & software that delights, entertains & empowers you and your users.
             </p>    
     </section> 
-    <section class="section-container-gray">
+    <section class="section-container-gray" id="section-card">
         <div class="pad-20">
             <button class="filter-btn">ALL</button>
             <button class="filter-btn">
@@ -46,12 +67,12 @@
             </button>
         </div>
         <div>
-            <div class="flex-row m-up-down">
-                <div style="width: 35%;">
+            <div class="flex-row m-up-down press-dirc">
+                <div class="img-k">
                     <img class="img-cover" src="assets/images/photos/pic-1.png" alt="img">
                 </div>
-                <div class="color-white pad-20 flex-column flex-sp-bt" style="width: 65%;">
-                    <div>
+                <div class="color-white pad-20 flex-column flex-sp-bt card-k">
+                    <div class="txt-k">
                         <div class="text-white color-lipstick card-tag">
                             <span>DECEMBER 12TH, 2019</span>
                         </div>
@@ -64,24 +85,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex-row flex-end m-up-down">
-                        <button class="blue-light-btn flex-row flex-center m-lf" style="border-radius: 20px; width: 50%;"> 
+                    <div class="flex-row flex-end m-up-down btn-con-a">
+                        <button class="blue-light-btn flex-row flex-center m-lf btn-k"> 
                             <img src="assets/images/i-social/pdf.png" style="margin-right: 10px;">
                             Award 2019 Aguascalientes
                         </button>
-                        <button class="blue-light-btn flex-row flex-center m-lf" style="border-radius: 20px; width: 50%;"> 
+                        <button class="blue-light-btn flex-row flex-center m-lf btn-k"> 
                             <img src="assets/images/i-social/right-wh.png" style="margin-right: 10px;">
                             <span>Interview to Guillermo & Anurag</span>
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="flex-row m-up-down">
-                <div style="width: 35%;">
+            <div class="flex-row m-up-down press-dirc">
+                <div class="img-k">
                     <img class="img-cover" src="assets/images/photos/pic-1.png" alt="img">
                 </div>
-                <div class="color-white pad-20 flex-column flex-sp-bt" style="width: 65%;">
-                    <div>
+                <div class="color-white pad-20 flex-column flex-sp-bt card-k">
+                    <div class="txt-k">
                         <div class="text-white color-lipstick card-tag">
                             <span>DECEMBER 12TH, 2019</span>
                         </div>
@@ -94,24 +115,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex-row flex-end m-up-down">
-                        <button class="blue-light-btn flex-row flex-center m-lf" style="border-radius: 20px; width: 50%;"> 
+                    <div class="flex-row flex-end m-up-down btn-con-a">
+                        <button class="blue-light-btn flex-row flex-center m-lf btn-k"> 
                             <img src="assets/images/i-social/pdf.png" style="margin-right: 10px;">
                             Award 2019 Aguascalientes
                         </button>
-                        <button class="blue-light-btn flex-row flex-center m-lf" style="border-radius: 20px; width: 50%;"> 
+                        <button class="blue-light-btn flex-row flex-center m-lf btn-k"> 
                             <img src="assets/images/i-social/right-wh.png" style="margin-right: 10px;">
                             <span>Interview to Guillermo & Anurag</span>
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="flex-row m-up-down">
-                <div style="width: 35%;">
+            <div class="flex-row m-up-down press-dirc">
+                <div class="img-k">
                     <img class="img-cover" src="assets/images/photos/pic-1.png" alt="img">
                 </div>
-                <div class="color-white pad-20 flex-column flex-sp-bt" style="width: 65%;">
-                    <div>
+                <div class="color-white pad-20 flex-column flex-sp-bt card-k">
+                    <div class="txt-k">
                         <div class="text-white color-lipstick card-tag">
                             <span>DECEMBER 12TH, 2019</span>
                         </div>
@@ -124,12 +145,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex-row flex-end m-up-down">
-                        <button class="blue-light-btn flex-row flex-center m-lf sz-50" style="border-radius: 20px; width: 50%;"> 
+                    <div class="flex-row flex-end m-up-down btn-con-a">
+                        <button class="blue-light-btn flex-row flex-center m-lf btn-k"> 
                             <img src="assets/images/i-social/pdf.png" style="margin-right: 10px;">
                             Award 2019 Aguascalientes
                         </button>
-                        <button class="blue-light-btn flex-row flex-center m-lf sz-50" style="border-radius: 20px; width: 50%;"> 
+                        <button class="blue-light-btn flex-row flex-center m-lf btn-k"> 
                             <img src="assets/images/i-social/right-wh.png" style="margin-right: 10px;">
                             <span>Interview to Guillermo & Anurag</span>
                         </button>
@@ -138,7 +159,7 @@
             </div>
         </div>
         <div>
-            <div class="flex-row flex-center flex-col-center pad-20">
+            <div class="flex-row flex-center flex-col-center pad-20 pag-k">
                 <button class="filter-btn s-margin">
                     <img src="assets/images/i-social/right.png" class="prev-page"/>
                 </button>
@@ -175,8 +196,8 @@
             </div>
         </div>
         <div class="section-container-charcoal">
-            <div class="flex-row">
-                <div>
+            <div class="flex-row" id="ft-n">
+                <div class="footer-center">
                     <div>
                         <a>
                             <img class="img-sm" src="assets/images/logo/iTexico_Logo_WH_Web.png" alt="logo">
@@ -273,7 +294,7 @@
                         <a>Opinions</a>
                     </li>
                 </ul>
-                <ul class="list-footer">
+                <ul class="list-footer" id="ft-con">
                     <li>contact</li>
                     <li>
                         <address>
@@ -296,5 +317,19 @@
             Privacy & Legal
         </div>
     </footer>
+        <script>
+        function displayMenu(){
+            var display;
+            var overlay = document.getElementById("overlay");
+            display = overlay.style.display;
+
+            if (display == "none"){
+                overlay.style.display = "block"
+            }
+            else{
+                overlay.style.display = "none"
+            }
+        }
+    </script>
 </body>
 </html>
