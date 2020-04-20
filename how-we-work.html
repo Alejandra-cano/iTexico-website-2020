@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+            <!--Mobile nav-->
+     <div class="mobile-or-tablet">
+        <div class="menu_btn">
+            <div style="margin: 15px 29px 29px 29px; margin-left: auto;" onclick="displayMenu()"> <img style="height: 50px; width: 50px;" src="assets/images/open-menu.svg"></div>   
+        </div>
+        <div id="overlay" style="display:none;">
+            <div style="display:flex; flex-direction: row; height: 75px;">
+                <div><img class="logo" src="assets/images/logo/iTexico_TagLogo_whiteWeb.png" alt="logo"></div>
+                <div class="nav-icon" id="close_menu" onclick="displayMenu()"> <img class="close-ic" src="assets/images/close.svg"> </div>
+            </div>
+            <ul class="nav-menu" style="text-align: center; padding-inline-start: 0px">
+                <li class="nav-link"><a href="#"> Our Services</a></li>
+                <li class="nav-link"><a href="#"> How We Work</a></li>
+                <li class="nav-link"><a href="#">Case Studies</a></li>
+                <li class="nav-link"><a href="#"> About Us</a></li>
+                <li class="nav-link"><a href="#"> Blog</a></li>
+                <li class="nav-link"><a href="#"> Contact</a></li>
+            </ul>
+        </div>
+     </div>
+    <!--end of mobile nav-->
     <div class="nav-subcontainer">
         <nav class="flex-row">
             <a>
@@ -33,7 +54,7 @@
                 Achieve your business goals and digital innovations efforts by leveraging core competencies through a Nearshore+ model software development team.
             </p>    
     </section>
-    <section class="section-container-gray">
+    <section class="section-container-gray" id="a-us">
         <div class="flex-row flex-sp-ar">
             <div class="text-charcoal text-snd text-left sz-50">
                 <p>
@@ -44,7 +65,7 @@
                 </p>
             </div>
             <div class="sz-50 flex-row flex-end">
-                <video width="575" height="326px" controls>
+                <video width="575" height="326px" controls id="vid-a">
                     <source src="" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -57,10 +78,10 @@
             <div class="card">
                 <div class="color-blue">
                     <h3 class="text-white-pop flex-column s-margin pad-20">
-                        <span class="text-snd text-left">
+                        <span class="text-snd text-left text-rz">
                             If you need engineering
                         </span>
-                        <span class="text-main">
+                        <span class="text-main sp-txt txt-f text-mg">
                             Project Delivery
                         </span>
                     </h3>
@@ -69,27 +90,27 @@
                     <ul>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                     </ul>
                     <div class="flex-row flex-center m-up-down">
@@ -102,10 +123,10 @@
             <div class="card">
                 <div class="color-lipstick">
                     <h3 class="text-white-pop flex-column s-margin pad-20">
-                        <span class="text-snd text-left">
+                        <span class="text-snd text-left text-rz">
                             If you need a bespoke solution
                         </span>
-                        <span class="text-main">
+                        <span class="text-main txt-f text-mg">
                             Team Delivery
                         </span>
                     </h3>
@@ -114,27 +135,27 @@
                     <ul>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                     </ul>
                     <div class="flex-row flex-center m-up-down">
@@ -147,10 +168,10 @@
             <div class="card">
                 <div class="color-charcoal">
                     <h3 class="text-white-pop flex-column s-margin pad-20">
-                        <span class="text-snd text-left">
+                        <span class="text-snd text-left text-rz">
                             If you need IT insights
                         </span>
-                        <span class="text-main">
+                        <span class="text-main txt-f text-mg">
                             Consultancy
                         </span>
                     </h3>
@@ -159,27 +180,27 @@
                     <ul>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                     </ul>
                     <div class="flex-row flex-center m-up-down">
@@ -293,8 +314,8 @@
             </div>
         </div>
         <div class="section-container-charcoal">
-            <div class="flex-row">
-                <div>
+            <div class="flex-row" id="ft-n">
+                <div class="footer-center">
                     <div>
                         <a>
                             <img class="img-sm" src="assets/images/logo/iTexico_Logo_WH_Web.png" alt="logo">
@@ -391,7 +412,7 @@
                         <a>Opinions</a>
                     </li>
                 </ul>
-                <ul class="list-footer">
+                <ul class="list-footer" id="ft-con">
                     <li>contact</li>
                     <li>
                         <address>
@@ -414,5 +435,19 @@
             Privacy & Legal
         </div>
     </footer>
+        <script>
+        function displayMenu(){
+            var display;
+            var overlay = document.getElementById("overlay");
+            display = overlay.style.display;
+
+            if (display == "none"){
+                overlay.style.display = "block"
+            }
+            else{
+                overlay.style.display = "none"
+            }
+        }
+    </script>
 </body>
 </html>

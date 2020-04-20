@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+            <!--Mobile nav-->
+     <div class="mobile-or-tablet">
+        <div class="menu_btn">
+            <div style="margin: 15px 29px 29px 29px; margin-left: auto;" onclick="displayMenu()"> <img style="height: 50px; width: 50px;" src="assets/images/open-menu.svg"></div>   
+        </div>
+        <div id="overlay" style="display:none;">
+            <div style="display:flex; flex-direction: row; height: 75px;">
+                <div><img class="logo" src="assets/images/logo/iTexico_TagLogo_whiteWeb.png" alt="logo"></div>
+                <div class="nav-icon" id="close_menu" onclick="displayMenu()"> <img class="close-ic" src="assets/images/close.svg"> </div>
+            </div>
+            <ul class="nav-menu" style="text-align: center; padding-inline-start: 0px">
+                <li class="nav-link"><a href="#"> Our Services</a></li>
+                <li class="nav-link"><a href="#"> How We Work</a></li>
+                <li class="nav-link"><a href="#">Case Studies</a></li>
+                <li class="nav-link"><a href="#"> About Us</a></li>
+                <li class="nav-link"><a href="#"> Blog</a></li>
+                <li class="nav-link"><a href="#"> Contact</a></li>
+            </ul>
+        </div>
+     </div>
+    <!--end of mobile nav-->
     <div class="nav-subcontainer">
         <nav class="flex-row">
             <a>
@@ -33,7 +54,7 @@
                 iTexico is helping start-up, growth, mid-market and enterprise companies innovate their business with solutions for Mobile Web, Cloud and AI.
             </p>    
     </section>
-    <section class="section-container-gray">
+    <section class="section-container-gray" id="a-us">
         <div class="flex-row flex-sp-ar">
             <div class="text-charcoal text-snd text-left sz-50">
                 <p>
@@ -44,8 +65,8 @@
                     Since its’ founding, iTexico has experienced 500% growth while maintaining strong investments in today’s technology platforms and delivery capacity.
                 </p>
             </div>
-            <div class="sz-50 flex-row flex-end">
-                <video width="575" height="326px" controls>
+            <div class="sz-50 flex-row flex-end" id="sec-us-v">
+                <video width="575" height="326px" controls id="vid-a">
                     <source src="" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -76,10 +97,10 @@
             <div class="card">
                 <div class="color-blue">
                     <h2 class="text-white-pop flex-column s-margin pad-20">
-                        <span class="text-main">
+                        <span class="text-main txt-f">
                             Business Engagement
                         </span>
-                        <span class="text-snd text-left">
+                        <span class="text-snd text-left text-mg">
                             Objectives overview
                         </span>
                     </h2>
@@ -88,27 +109,27 @@
                     <ul>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                     </ul>
                 </div>
@@ -116,10 +137,10 @@
             <div class="card">
                 <div class="color-lipstick">
                     <h2 class="text-white-pop flex-column s-margin pad-20">
-                        <span class="text-main">
+                        <span class="text-main txt-f">
                             Business Engagement
                         </span>
-                        <span class="text-snd text-left">
+                        <span class="text-snd text-left text-mg">
                             Objectives overview
                         </span>
                     </h2>
@@ -128,27 +149,27 @@
                     <ul>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                     </ul>
                 </div>
@@ -156,10 +177,10 @@
             <div class="card">
                 <div class="color-charcoal">
                     <h2 class="text-white-pop flex-column s-margin pad-20">
-                        <span class="text-main">
+                        <span class="text-main txt-f">
                             Business Engagement
                         </span>
-                        <span class="text-snd text-left">
+                        <span class="text-snd text-left text-mg">
                             Objectives overview
                         </span>
                     </h2>
@@ -168,27 +189,27 @@
                     <ul>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                     </ul>
                 </div>
@@ -196,10 +217,10 @@
             <div class="card">
                 <div class="color-charcoal">
                     <h2 class="text-white-pop flex-column s-margin pad-20">
-                        <span class="text-main">
+                        <span class="text-main txt-f">
                             Business Engagement
                         </span>
-                        <span class="text-snd text-left">
+                        <span class="text-snd text-left text-mg">
                             Objectives overview
                         </span>
                     </h2>
@@ -208,27 +229,27 @@
                     <ul>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Request initial analysis</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Request initial analysis</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Sales & PMO support</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Sales & PMO support</span>
                         </li>
                     </ul>
                 </div>
@@ -323,27 +344,27 @@
                         Programming languages and competencies
                     </p>
                 </div>
-                <div class="card-content">
+                <div class="card-content pd-card">
                     <ul>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Javascript</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Javascript</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Java</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Java</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">.Net</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">.Net</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Javascript</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Javascript</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Javascript</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Javascript</span>
                         </li>
                     </ul>
                 </div>
@@ -354,27 +375,27 @@
                         Programming languages and competencies
                     </p>
                 </div>
-                <div class="card-content">
+                <div class="card-content pd-card">
                     <ul>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Javascript</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Javascript</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Java</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Java</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">.Net</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">.Net</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Javascript</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Javascript</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Javascript</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Javascript</span>
                         </li>
                     </ul>
                 </div>
@@ -385,27 +406,27 @@
                         Programming languages and competencies
                     </p>
                 </div>
-                <div class="card-content">
+                <div class="card-content pd-card">
                     <ul>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Javascript</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Javascript</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Java</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Java</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">.Net</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">.Net</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Javascript</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Javascript</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Javascript</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Javascript</span>
                         </li>
                     </ul>
                 </div>
@@ -416,27 +437,27 @@
                         Programming languages and competencies
                     </p>
                 </div>
-                <div class="card-content">
+                <div class="card-content pd-card">
                     <ul>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Javascript</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Javascript</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Java</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Java</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">.Net</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">.Net</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Javascript</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Javascript</span>
                         </li>
                         <li class="flex-row flex-col-center">
                             <img src="assets/images/i-social/correct.png"/>
-                            <span class="m-lf text-snd-sub text-left">Javascript</span>
+                            <span class="m-lf text-snd-sub text-left pd-txt">Javascript</span>
                         </li>
                     </ul>
                 </div>
@@ -541,7 +562,7 @@
     <section class="section-container-white">
         <h2 class="section-title">We built tech solutions for</h2>
         <div>
-            <div class="flex-row flex-center">
+            <div class="flex-row flex-center" id="cont-w">
                 <img src="assets/images/companies/carbon-sm.png" alt="img" class="img-margin">
                 <img src="assets/images/companies/chi-sm.png" alt="img" class="img-margin">
                 <img src="assets/images/companies/HomeAway.png" alt="img" class="img-margin">
@@ -553,8 +574,8 @@
                 <p class="text-prim text-charcoal-pop text-left sz-med ">
                     We have provided Nearshore Software Development services to more than 200 start-up, growth, mid market and enterprise companies.
                 </p>
-                <div>
-                    <img src="assets/images/companies/clutch.png" alt="img" class="img-margin">
+                <div id="img-pd">
+                    <img src="assets/images/companies/clutch.png" alt="img" class="img-margin" id="img-cl">
                 </div>
             </div>
         </div>
@@ -640,8 +661,8 @@
             </div>
         </div>
         <div class="section-container-charcoal">
-            <div class="flex-row">
-                <div>
+            <div class="flex-row" id="ft-n">
+                <div class="footer-center">
                     <div>
                         <a>
                             <img class="img-sm" src="assets/images/logo/iTexico_Logo_WH_Web.png" alt="logo">
@@ -738,7 +759,7 @@
                         <a>Opinions</a>
                     </li>
                 </ul>
-                <ul class="list-footer">
+                <ul class="list-footer" id="ft-con">
                     <li>contact</li>
                     <li>
                         <address>
@@ -761,5 +782,19 @@
             Privacy & Legal
         </div>
     </footer>
+        <script>
+        function displayMenu(){
+            var display;
+            var overlay = document.getElementById("overlay");
+            display = overlay.style.display;
+
+            if (display == "none"){
+                overlay.style.display = "block"
+            }
+            else{
+                overlay.style.display = "none"
+            }
+        }
+    </script>
 </body>
 </html>

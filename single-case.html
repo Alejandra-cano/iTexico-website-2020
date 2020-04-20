@@ -8,6 +8,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--Mobile nav-->
+     <div class="mobile-or-tablet">
+        <div class="menu_btn">
+            <div style="margin-left: auto;" onclick="displayMenu()"> <img style="height: 50px; width: 50px;" src="assets/images/open-menu.svg">
+            </div>   
+        </div>
+        <div id="overlay" style="display:none;">
+            <div style="display:flex; flex-direction: row; height: 75px;">
+                <div><img class="logo" src="assets/images/logo/iTexico_TagLogo_whiteWeb.png" alt="logo">
+                </div>
+                <div class="nav-icon" id="close_menu" onclick="displayMenu()"> <img class="close-ic" src="assets/images/close.svg">
+                </div>
+            </div>
+            <ul class="nav-menu" style="text-align: center; padding-inline-start: 0px">
+                <li class="nav-link"><a href="#"> Our Services</a></li>
+                <li class="nav-link"><a href="#"> How We Work</a></li>
+                <li class="nav-link"><a href="#">Case Studies</a></li>
+                <li class="nav-link"><a href="#"> About Us</a></li>
+                <li class="nav-link"><a href="#"> Blog</a></li>
+                <li class="nav-link"><a href="#"> Contact</a></li>
+            </ul>
+        </div>
+     </div>
+    <!--end of mobile nav-->
     <div class="nav-subcontainer">
         <nav class="flex-row">
             <a>
@@ -35,8 +59,8 @@
     </section> 
 
     <section class="section-container-white">
-        <div class="flex-row">
-            <div style="width: 48%;" class="flex-column flex-sp-bt">
+        <div class="flex-row flex-col-d">
+            <div class="flex-column flex-sp-bt sc-w">
                 <div>
                     <h2 class="text-snd text-left">
                         Using a team of mobile development experts with specific experiences in iOS, Android and .NET development.
@@ -50,20 +74,20 @@
                         Technologies involved in this project
                     </h2>
                     <div class="flex-row">
-                        <img src="assets/images/photos/technologies/tech-1.png" alt="img">
-                        <img src="assets/images/photos/technologies/group-2.png" alt="img">
-                        <img src="assets/images/photos/technologies/group-3.png" alt="img">
-                        <img src="assets/images/photos/technologies/group-4.png" alt="img">
+                        <img src="assets/images/photos/technologies/tech-1.png" alt="img" class="img-q">
+                        <img src="assets/images/photos/technologies/group-2.png" alt="img" class="img-q">
+                        <img src="assets/images/photos/technologies/group-3.png" alt="img" class="img-q">
+                        <img src="assets/images/photos/technologies/group-4.png" alt="img" class="img-q">
                     </div>  
                 </div>
             </div>
-            <div style="width: 24%; margin: 20px;">
-                <div>
+            <div class="sc-r">
+                <div class="sc-b">
                     <div class="card-border">
-                        <img src="assets/images/companies/cariloop.png" class="img-cover" alt="">
+                        <img src="assets/images/companies/cariloop.png" class="img-cover img-ex" alt="">
                     </div>
-                    <div class="color-charcoal text-white pad-20">
-                        <div class="flex-column" style="margin-top: 10px; margin-bottom: 10px;">
+                    <div class="color-charcoal text-white pad-20 flex-ex">
+                        <div class="flex-column text-st">
                             <span class="text-snd text-left">
                                 Sector
                             </span>
@@ -71,7 +95,7 @@
                                 Retail
                             </span>
                         </div>
-                        <div class="flex-column">
+                        <div class="flex-column text-st">
                             <span class="text-snd text-left">
                                 Year
                             </span>
@@ -86,14 +110,14 @@
                                 Solutions
                             </span>
                             <div class="flex-row flex-col-center text-white">
-                                <img src="assets/images/Services/manual.png" style="margin-top: 10px; margin-bottom: 10px;" alt="img">
-                                <span class="text-trd text-left m-lf">
+                                <img src="assets/images/Services/manual.png" class="img-sc" alt="img">
+                                <span class="text-trd text-left m-lf pd-txt">
                                     Manual testing
                                  </span>
                             </div>
                             <div class="flex-row flex-col-center text-white">
-                                <img src="assets/images/Services/manual.png" alt="img">
-                                <span class="text-trd text-left m-lf">
+                                <img src="assets/images/Services/manual.png" class="img-sc" alt="img">
+                                <span class="text-trd text-left m-lf pd-txt">
                                     Automation testing
                                  </span>
                             </div>
@@ -101,16 +125,16 @@
                     </div>
                 </div>
             </div>
-            <div style="width: 24%;">
+            <div class="cnt-b">
                 <h3 class="text-snd text-blue">
                     DOWNLOAD CASE STUDY
                 </h3>
                 <form>
-                    <input class="form-input" style="width: 100%;" placeholder="Name"/>
-                    <input class="form-input" style="width: 100%;" placeholder="Email"/>
-                    <input class="form-input" style="width: 100%;" placeholder="Phone"/>
-                    <input class="form-input" style="width: 100%;" placeholder="Company"/>
-                    <input class="form-input" style="width: 100%;" placeholder="Job Title"/>
+                    <input class="form-input form-st" placeholder="Name"/>
+                    <input class="form-input form-st" placeholder="Email"/>
+                    <input class="form-input form-st" placeholder="Phone"/>
+                    <input class="form-input form-st" placeholder="Company"/>
+                    <input class="form-input form-st" placeholder="Job Title"/>
                 </form>
                 <div class="form-captcha flex-row flex-col-center flex-sp-ar">
                     <div>
@@ -120,8 +144,8 @@
                         <img src="assets/images/i-social/re-captcha-symbol-copy.png" alt="">
                     </div>
                 </div>
-                <div class="flex-column">
-                    <button class="blue-btn" style="width: 85px;">
+                <div class="flex-column btn-column ">
+                    <button class="blue-btn btn-cnt">
                         SEND
                     </button>
                     <a class="form-privacy">Privacy Policy</a>
@@ -133,7 +157,7 @@
     <section class="section-container-gray flex-column flex-sp-bt">
         <h2 class="section-title">Similar Case Studies</h2>
         <div class="flex-row flex-center">
-            <div class="flex-row card">
+            <div class="flex-row card flex-card">
                 <div class="color-white pad-20">
                     <img src="assets/images/companies/mogas.png" alt="">
                 </div>
@@ -143,7 +167,7 @@
                     </p>
                 </div>
             </div>
-            <div class="flex-row card">
+            <div class="flex-row card flex-card">
                 <div class="color-white pad-20">
                     <img src="assets/images/companies/mogas.png" alt="">
                 </div>
@@ -153,7 +177,7 @@
                     </p>
                 </div>
             </div>
-            <div class="flex-row card">
+            <div class="flex-row card flex-card">
                 <div class="color-white pad-20">
                     <img src="assets/images/companies/mogas.png" alt="">
                 </div>
@@ -196,8 +220,8 @@
             </div>
         </div>
         <div class="section-container-charcoal">
-            <div class="flex-row">
-                <div>
+            <div class="flex-row" id="ft-n">
+                <div class="footer-center">
                     <div>
                         <a>
                             <img class="img-sm" src="assets/images/logo/iTexico_Logo_WH_Web.png" alt="logo">
@@ -294,7 +318,7 @@
                         <a>Opinions</a>
                     </li>
                 </ul>
-                <ul class="list-footer">
+                <ul class="list-footer" id="ft-con">
                     <li>contact</li>
                     <li>
                         <address>
@@ -317,5 +341,19 @@
             Privacy & Legal
         </div>
     </footer>
+        <script>
+        function displayMenu(){
+            var display;
+            var overlay = document.getElementById("overlay");
+            display = overlay.style.display;
+
+            if (display == "none"){
+                overlay.style.display = "block"
+            }
+            else{
+                overlay.style.display = "none"
+            }
+        }
+    </script>
 </body>
 </html>
