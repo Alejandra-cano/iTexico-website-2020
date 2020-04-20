@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+            <!--Mobile nav-->
+     <div class="mobile-or-tablet">
+        <div class="menu_btn">
+            <div style="margin: 15px 29px 29px 29px; margin-left: auto;" onclick="displayMenu()"> <img style="height: 50px; width: 50px;" src="assets/images/open-menu.svg"></div>   
+        </div>
+        <div id="overlay" style="display:none;">
+            <div style="display:flex; flex-direction: row; height: 75px;">
+                <div><img class="logo" src="assets/images/logo/iTexico_TagLogo_whiteWeb.png" alt="logo"></div>
+                <div class="nav-icon" id="close_menu" onclick="displayMenu()"> <img class="close-ic" src="assets/images/close.svg"> </div>
+            </div>
+            <ul class="nav-menu" style="text-align: center; padding-inline-start: 0px">
+                <li class="nav-link"><a href="#"> Our Services</a></li>
+                <li class="nav-link"><a href="#"> How We Work</a></li>
+                <li class="nav-link"><a href="#">Case Studies</a></li>
+                <li class="nav-link"><a href="#"> About Us</a></li>
+                <li class="nav-link"><a href="#"> Blog</a></li>
+                <li class="nav-link"><a href="#"> Contact</a></li>
+            </ul>
+        </div>
+     </div>
+    <!--end of mobile nav-->
     <div class="nav-subcontainer">
         <nav class="flex-row">
             <a>
@@ -36,13 +57,13 @@
     <section class="section-container-white">
         <h2 class="section-title">About Us</h2>
         <div class="flex-column flex-col-center flex-center accordion">
-            <div>
+            <div class="flex-column">
                 <button class="accordion-btn flex-row flex-sp-bt">
                     How big is iTexico? or What is the number of worldwide employees?
                     <img src="assets/images/i-social/plus-wh.png"/>
                 </button>
             </div>
-            <div class="flex-column">
+            <div class="flex-column" id="open-acordion">
                 <button class="accordion-btn flex-row flex-sp-bt accordion-open">
                     What services do you offer?
                     <img src="assets/images/i-social/minus-wh copy.png"/>
@@ -212,7 +233,7 @@
         </div>
     </section>
     <!-- FOOTER -->
-    <footer>
+       <footer>
         <div class="section-container-lipstick flex-row">
             <div class="sz-50">
                 <div class="text-white-pop text-prim text-left">
@@ -228,8 +249,8 @@
             </div>
         </div>
         <div class="section-container-charcoal">
-            <div class="flex-row">
-                <div>
+            <div class="flex-row" id="ft-n">
+                <div class="footer-center">
                     <div>
                         <a>
                             <img class="img-sm" src="assets/images/logo/iTexico_Logo_WH_Web.png" alt="logo">
@@ -326,7 +347,7 @@
                         <a>Opinions</a>
                     </li>
                 </ul>
-                <ul class="list-footer">
+                <ul class="list-footer" id="ft-con">
                     <li>contact</li>
                     <li>
                         <address>
@@ -349,5 +370,19 @@
             Privacy & Legal
         </div>
     </footer>
+        <script>
+        function displayMenu(){
+            var display;
+            var overlay = document.getElementById("overlay");
+            display = overlay.style.display;
+
+            if (display == "none"){
+                overlay.style.display = "block"
+            }
+            else{
+                overlay.style.display = "none"
+            }
+        }
+    </script>
 </body>
 </html>
